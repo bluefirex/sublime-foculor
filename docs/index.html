@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/build.css">
+		<link rel="stylesheet" href="https://bluefirex.com/fonts/effra/stylesheet.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+
+		<title>foculor Theme for Sublime Text 3</title>
+	</head>
+
+	<body>
+		<nav>
+			<ul>
+				<li><label>Projects:</label></li>
+				<li><a href="#" class="active">foculor</a></li>
+				<li><a href="https://wallpapers.bfx.re">bfx.wallpapers</a></li>
+				<li><a href="https://blog.bluefirex.com">Blog</a></li>
+			</ul>
+		</nav>
+
+		<header id="main">
+			<div class="logo">
+				<img src="images/logo.png" />
+			</div>
+
+			<div class="pitch">
+				<div class="slogan">
+					<h2>Coding is an art.</h2>
+					<h3>Make your editor an artboard.</h3>
+				</div>
+
+				<div class="action">
+					<a class="button" href="#download">
+						<img src="images/icons/download.svg" />
+
+						Download
+					</a>
+				</div>
+			</div>
+
+			<div class="features">
+				<ul>
+					<li>
+						<img src="images/icons/check.svg" />
+						Colored File Icons
+					</li>
+
+					<li>
+						<img src="images/icons/check.svg" />
+						Matching Monokai Highlighting
+					</li>
+
+					<li>
+						<img src="images/icons/check.svg" />
+						Multiple Font Options
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<section id="gallery">
+			<div class="wrapper">
+				<header>
+					<div class="title">
+						<h2>Dark &amp; Light Variants</h2>
+					</div>
+
+					<aside>
+						<span>Click to Preview</span>
+					</aside>
+				</header>
+
+				<div class="full-size">
+					<div class="category">
+						<div class="images">
+							<figure>
+								<a href="images/screenshots/overview_dark.png"><img src="images/screenshots/overview_dark.png" /></a>
+							</figure>
+
+							<figure>
+								<a href="images/screenshots/overview_dark_nord.png"><img src="images/screenshots/overview_dark_nord.png" /></a>
+							</figure>
+
+							<figure>
+								<a href="images/screenshots/overview_light.png"><img src="images/screenshots/overview_light.png" /></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+
+				<div class="half-size">
+					<div class="category">
+						<header>
+							<h2>Find &amp; Replace</h2>
+						</header>
+
+						<div class="images">
+							<figure>
+								<a href="images/screenshots/find_replace_dark.png"><img src="images/screenshots/find_replace_dark.png" /></a>
+							</figure>
+
+							<figure>
+								<a href="images/screenshots/find_replace_light.png"><img src="images/screenshots/find_replace_light.png" /></a>
+							</figure>
+						</div>
+					</div>
+
+					<div class="category">
+						<header>
+							<h2>Command Menu</h2>
+						</header>
+
+						<div class="images">
+							<figure>
+								<a href="images/screenshots/commands_dark.png"><img src="images/screenshots/commands_dark.png" /></a>
+							</figure>
+
+							<figure>
+								<a href="images/screenshots/commands_light.png"><img src="images/screenshots/commands_light.png" /></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="download">
+			<header>
+				<div class="title">
+					<h2>Download</h2>
+				</div>
+			</header>
+
+			<div class="structured-text">
+				<header>
+					<h3>Package Control</h3>
+				</header>
+
+				<article>
+					<p>
+						Press <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>, search for <code>Install Package</code>,
+						then <code>foculor</code>.
+					</p>
+
+					<p>
+						Continue with Configuration.
+					</p>
+				</article>
+			</div>
+
+			<div class="structured-text">
+				<header>
+					<h3>Manual</h3>
+				</header>
+
+				<article>
+					<p>
+						Download <a href="#tarball">foculor.zip</a>.
+					</p>
+
+					<p>
+						Extract as <code>Packages/Theme - foculor</code> into your packages directory.
+					</p>
+
+					<p>
+						Continue with Configuration.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="configuration">
+			<header>
+				<div class="title">
+					<h2>Configuration</h2>
+				</div>
+			</header>
+
+			<div class="structured-text">
+				<header>
+					<h3>Enable Theme</h3>
+				</header>
+
+				<article>
+					<p>
+						Add one of the following lines to your <code>settings.json</code>:
+					</p>
+
+					<p>
+						<pre class="no-bg">"<span class="h-kwd">theme</span>": "<span class="h-str">foculor.sublime-theme</span>"</pre>
+						<pre class="no-bg">"<span class="h-kwd">theme</span>": "<span class="h-str">foculor Light.sublime-theme</span>"</pre>
+					</p>
+				</article>
+			</div>
+
+			<div class="structured-text">
+				<header>
+					<h3>Enable Color Scheme</h3>
+				</header>
+
+				<article>
+					<p>
+						Add one of the following lines to your <code>settings.json</code>:
+					</p>
+
+					<p>
+						<pre class="no-bg">"<span class="h-kwd">color_scheme</span>": "<span class="h-str">Packages/Theme - foculor/Monokai foculor.tmTheme</span>"</pre>
+						<pre class="no-bg">"<span class="h-kwd">color_scheme</span>": "<span class="h-str">Packages/Theme - foculor/Monokai foculor Light.tmTheme</span>"</pre>
+						<pre class="no-bg">"<span class="h-kwd">color_scheme</span>": "<span class="h-str">Packages/Theme - foculor/Monokai foculor Nord.tmTheme</span>"</pre>
+					</p>
+				</article>
+			</div>
+
+			<div class="structured-text">
+				<header>
+					<h3>Change Font</h3>
+				</header>
+
+				<article>
+					<p>
+						foculor comes with support for four fonts (must be installed on your system):
+					</p>
+
+					<p>
+						<ul>
+							<li>Sublime <small>(default)</small></li>
+							<li><a href="https://01.org/clear-SANS">Clear Sans</a></li>
+							<li><a href="https://developer.apple.com/fonts/">San Francisco Text</a></li>
+							<li><a href="http://font.ubuntu.com/">Ubuntu</a></li>
+						</ul>
+					</p>
+
+					<br />
+
+					<p>
+						<pre class="no-bg">"<span class="h-kwd">theme_font_clear_sans</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">theme_font_san_francisco</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">theme_font_ubuntu</span>": <span class="h-kwd">true</span></pre>
+					</p>
+				</article>
+			</div>
+
+			<div class="structured-text">
+				<header>
+					<h3>Change Tab Size</h3>
+				</header>
+
+				<article>
+					<p>
+						You can customize the size of your tabs by setting these options (default is normal):
+					</p>
+
+					<p>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_auto_width</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_small</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_font_small</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_normal</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_font_normal</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_large</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_tabs_font_large</span>": <span class="h-kwd">true</span></pre>
+					</p>
+				</article>
+			</div>
+
+			<div class="structured-text">
+				<header>
+					<h3>Change Sidebar Size</h3>
+				</header>
+
+				<article>
+					<p>
+						You can customize the size of your sidebar entries by setting these options (default is normal):
+					</p>
+
+					<p>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_tree_small</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_font_small</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_tree_normal</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_font_normal</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_tree_large</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_font_large</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_tree_xlarge</span>": <span class="h-kwd">true</span></pre>
+						<pre class="no-bg">"<span class="h-kwd">foculor_sidebar_font_xlarge</span>": <span class="h-kwd">true</span></pre>
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<div class="wrapper">
+				<div class="copyright">
+					&copy; <span id="date-y">2017</span> bluefirex
+				</div>
+
+				<div class="links">
+					<a href="https://bluefirex.com/#contact">Imprint</a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// Pre-Clip-Functionality
+			var clip = function(el) {
+				let range = document.createRange()
+				range.selectNodeContents(el)
+
+				let sel = window.getSelection()
+				sel.removeAllRanges()
+				sel.addRange(range)
+			}
+
+			for (let el of document.getElementsByTagName('pre')) {
+				el.onclick = function() {
+					clip(el)
+				}
+			}
+
+			// Lazy-Ass setting of the current year
+			document.getElementById('date-y').innerHTML = new Date().getFullYear()
+		</script>
+	</body>
+</html>

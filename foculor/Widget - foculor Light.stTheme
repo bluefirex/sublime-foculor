@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>bluefirex</string>
+	<key>comment</key>
+	<string>foculor Light</string>
+	<key>name</key>
+	<string>foculor Light</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#F5F6FA</string>
+				<key>caret</key>
+				<string>#8BA7A7</string>
+				<key>foreground</key>
+				<string>#313233</string>
+				<key>invisibles</key>
+				<string>#F3FFB51A</string>
+				<key>selection</key>
+				<string>#31323318</string>
+				<key>selectionBorder</key>
+				<string>#3132332A</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
