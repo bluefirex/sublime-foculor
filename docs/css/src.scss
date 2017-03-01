@@ -304,6 +304,7 @@ header#main {
 
 		.slogan {
 			flex-grow: 1;
+			padding-bottom: 6px;
 
 			h2, h3 {
 				@include mp0;
@@ -328,6 +329,12 @@ header#main {
 			a.button {
 				font-size: 20px;
 				font-weight: 500;
+			}
+
+			a.button + a {
+				display: block;
+				margin-top: 6px;
+				font-size: 14px;
 			}
 		}
 	}
