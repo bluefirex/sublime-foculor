@@ -44,6 +44,16 @@ body {
 	-moz-osx-font-smoothing: greyscale;
 }
 
+::selection {
+	background: $accent;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: $accent;
+	color: #fff;
+}
+
 h1, h2 {
 	font-weight: 300;
 	letter-spacing: 3px;
