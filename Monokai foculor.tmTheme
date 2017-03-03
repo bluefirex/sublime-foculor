@@ -31,6 +31,10 @@
 				<string>#292F3D</string>
 				<key>activeGuide</key>
 				<string>#353D4F</string>
+				<key>shadow</key>
+				<string>#00000030</string>
+				<key>shadowWidth</key>
+				<string>12</string>
 			</dict>
 		</dict>
 		<dict>
