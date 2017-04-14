@@ -12,7 +12,6 @@
 	    - highlight_modified_tabs *
 	    - bold_folder_labels
 	    - overlay_scroll_bars *
-	    - theme_font_san_francisco
 	    - theme_font_clear_sans
 	    - theme_font_ubuntu
 	    - foculor_tabs_auto_width
@@ -195,14 +194,8 @@
 {
 	"class": "tab_label",
 	"fade": true,
-	"font.size": 11.0,
+	"font.size": 12.0,
 	"fg": [82, 90, 107], // Color: Sidebar Foreground
-	},
-	{
-		"class": "tab_label",
-		"font.face": "San Francisco Text",
-		"font.size": 12.0,
-		"settings": ["theme_font_san_francisco"]
 	},
 	{
 		"class": "tab_label",
@@ -435,11 +428,6 @@
 	},
 	{
 		"class": "label_control",
-		"font.face": "San Francisco Text",
-		"settings": ["theme_font_san_francisco"]
-	},
-	{
-		"class": "label_control",
 		"font.face": "Clear Sans",
 		"settings": ["theme_font_clear_sans"]
 	},
@@ -487,11 +475,6 @@
 	{
 		"class": "tool_tip_label_control",
 		"color": [255,255,255] // 07
-	},
-	{
-		"class": "tool_tip_label_control",
-		"font.face": "San Francisco Text",
-		"settings": ["theme_font_san_francisco"]
 	},
 	{
 		"class": "tool_tip_label_control",
@@ -568,11 +551,6 @@
 		},
 		{
 			"class": "sidebar_heading",
-			"font.face": "San Francisco Text",
-			"settings": ["theme_font_san_francisco"]
-		},
-		{
-			"class": "sidebar_heading",
 			"font.face": "Clear Sans",
 			"settings": ["theme_font_clear_sans"]
 		},
@@ -616,12 +594,7 @@
 	{
 		"class": "sidebar_label",
 		"color": [82, 90, 107], // Color: Sidebar Foreground
-		},
-		{
-			"class": "sidebar_label",
-			"font.face": "San Francisco Text",
-			// "font.face": "System Font Regular",
-			"settings": ["theme_font_san_francisco"]
+		"font.size": 12.0
 		},
 		{
 			"class": "sidebar_label",
