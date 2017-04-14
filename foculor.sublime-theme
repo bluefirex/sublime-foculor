@@ -38,6 +38,14 @@
 */
 [
 //
+// WINDOW TITLE
+//
+{
+	"class": "title_bar",
+	"bg": [23, 26, 36],
+	"fg": ["hsl", 221, 12, 40],
+},
+//
 // TABS (REGULAR)
 //
 	// Tab set

@@ -38,6 +38,14 @@
 */
 [
 //
+// WINDOW TITLE
+//
+{
+	"class": "title_bar",
+	"bg": [237, 238, 242], // Color: Tinted Background
+	"fg": [130, 138, 154], // Color: Sidebar Foreground
+},
+//
 // TABS (REGULAR)
 //
 	// Tab set
