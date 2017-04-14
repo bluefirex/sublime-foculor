@@ -584,12 +584,6 @@
 							"settings": ["foculor_sidebar_tree_xlarge"],
 							"row_padding": [8, 8]
 							},
-	// Sidebar heading selected
-	{
-		"class": "sidebar_heading",
-		"parents": [{"class": "tree_row","attributes": ["selected"]}],
-		"shadow_offset": [0,0]
-	},
 	// Sidebar entry
 	{
 		"class": "sidebar_label",
