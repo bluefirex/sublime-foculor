@@ -1177,7 +1177,8 @@
 	{
 		"class": "tabset_control",
 		"settings": ["foculor_tabs_auto_width"],
-		"tab_width": 0
+		"tab_width": 180,
+		"tab_height": 30,
 		},
 		{
 			"class": "tabset_control",
