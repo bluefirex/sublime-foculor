@@ -1,0 +1,6 @@
+# New in foculor 1.0
+
+* Support for blended titlebars in macOS (requires ST 3141 or later)
+* Fixes for fonts on macOS High Sierra
+
+If you find any issues, please report them at https://github.com/bluefirex/sublime-foculor/issues
