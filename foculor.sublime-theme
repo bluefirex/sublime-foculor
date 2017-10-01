@@ -42,7 +42,7 @@
 {
 	"class": "title_bar",
 	"bg": [23, 26, 36],
-	"fg": ["hsl", 221, 12, 40],
+	"fg": [255, 255, 255] // Temporary White Color to fix text color on macOS High Sierra
 },
 //
 // TABS (REGULAR)
