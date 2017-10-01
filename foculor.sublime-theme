@@ -465,7 +465,6 @@
 	// Tooltip container
 	{
 		"class": "tool_tip_control",
-		// "layer0.texture": "",
 		"layer0.tint": [57, 73, 171], // 02
 		"layer0.inner_margin": [1,1],
 		"layer0.opacity": 1,
@@ -518,24 +517,22 @@
 		"class": "sidebar_container",
 		"layer0.tint": [23, 26, 36], // Color: Tinted Background
 		"layer0.opacity": 1.0,
-		"layer0.inner_margin": [0, 0, 1, 0],
 		"content_margin": [0, 4, 0, 0]
 	},
 	// Sidebar tree
 	{
 		"class": "sidebar_tree",
-		"row_padding": [8,4],
 		"indent": 12,
 		"indent_offset": 14,
 		"indent_top_level": false,
-		"dark_content": true
+		"dark_content": true,
+		"row_padding": [8, 5]
 	},
 	// Sidebar rows
 	{
 		"class": "tree_row",
 		"layer0.tint": [29, 33, 43], // Color: Editor Background
-		"layer0.opacity": 0,
-		"layer0.inner_margin": [1,1]
+		"layer0.opacity": 0
 	},
 	// Sidebar row selected
 	{
@@ -567,12 +564,12 @@
 			{
 				"class": "sidebar_tree",
 				"settings": ["foculor_sidebar_tree_small"],
-				"row_padding": [8, 2]
+				"row_padding": [8, 4]
 				},
 				{
 					"class": "sidebar_tree",
 					"settings": ["foculor_sidebar_tree_normal"],
-					"row_padding": [8, 4]
+					"row_padding": [8, 5]
 					},
 					{
 						"class": "sidebar_tree",
@@ -583,6 +580,8 @@
 							"class": "sidebar_tree",
 							"settings": ["foculor_sidebar_tree_xlarge"],
 							"row_padding": [8, 8]
+							},
+							
 	// Sidebar entry
 	{
 		"class": "sidebar_label",
@@ -607,18 +606,23 @@
 			{
 				"class": "sidebar_label",
 				"settings": ["foculor_sidebar_font_normal"],
-				"font.size": 11.0
+				"font.size": 12.0
 				},
 				{
 					"class": "sidebar_label",
 					"settings": ["foculor_sidebar_font_large"],
-					"font.size": 12.0
+					"font.size": 13.0
 					},
 					{
 						"class": "sidebar_label",
 						"settings": ["foculor_sidebar_font_xlarge"],
 						"font.size": 14.0
 					},
+			{
+				"class": "sidebar_label",
+				"settings": ["!foculor_sidebar_font_small", "!foculor_sidebar_font_large", "!foculor_sidebar_font_xlarge"],
+				"font.size": 12.0
+			},
 	// Sidebar folder entry
 	{
 		"class": "sidebar_label",
