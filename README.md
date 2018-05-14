@@ -1,6 +1,6 @@
 # foculor
 
-A hyperminimal and focused theme for Sublime Text 3. Available in two main variants and three color schemes based on Monokai.
+A hyperminimal and focused theme for Sublime Text 3 (>3152). Available in two main variants and three color schemes based on Monokai.
 
 foculor includes colored file icons as well as different font options and support for exotic languages and plugins, like Vue, VCS Gutter or SublimeLinter.
 
