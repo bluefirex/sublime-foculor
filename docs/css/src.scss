@@ -115,6 +115,9 @@ pre {
 	display: inline-block;
 	border-radius: 3px;
 
+	overflow-x: auto;
+	max-width: 760px;
+
 	padding: {
 		left: 4px;
 		right: 4px;
@@ -130,6 +133,11 @@ pre {
 	&:not(.no-bg) {
 		background: $lightBackground;
 	}
+}
+
+p code {
+	vertical-align: middle;
+	margin-top: -2px;
 }
 
 pre {
