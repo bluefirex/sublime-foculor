@@ -45,6 +45,25 @@
 	"fg": [130, 138, 154], // Color: Sidebar Foreground
 },
 //
+// DIALOGS
+//
+{
+	"class": "dialog",
+	"layer0.tint": [237, 238, 242], // Color: Tinted Background
+	"layer0.opacity": 1.0
+	},
+	{
+		"class": "progress_bar_control",
+		"layer0.tint": [215, 216, 219], // Color: Progress Bar Background
+		"layer0.opacity": 1.0
+	},
+
+	{
+		"class": "progress_gauge_control",
+		"layer0.tint": [57, 73, 171], // Color: Accent
+		"layer0.opacity": 1.0
+	},
+//
 // TABS (REGULAR)
 //
 	// Tab set

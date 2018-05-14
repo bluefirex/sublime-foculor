@@ -45,6 +45,25 @@
 	"fg": [255, 255, 255] // Temporary White Color to fix text color on macOS High Sierra
 },
 //
+// DIALOGS
+//
+{
+	"class": "dialog",
+	"layer0.tint": [23, 26, 36], // Color: Tinted Background
+	"layer0.opacity": 1.0
+	},
+	{
+		"class": "progress_bar_control",
+		"layer0.tint": [14, 16, 20], // Color: Progress Bar Background
+		"layer0.opacity": 1.0
+	},
+
+	{
+		"class": "progress_gauge_control",
+		"layer0.tint": [57, 73, 171], // Color: Accent
+		"layer0.opacity": 1.0
+	},
+//
 // TABS (REGULAR)
 //
 	// Tab set
