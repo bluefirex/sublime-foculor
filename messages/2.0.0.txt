@@ -1,0 +1,12 @@
+# New in foculor 2.0
+
+* 4 new color schemes:
+    - Monokai foculor 2 (ST Build >3152 or 3.1 required)
+    - Monokai foculor 2 Light (ST Build >3152 or 3.1 required)
+    - Monokai foculor 2 Nord (ST Build >3152 or 3.1 required)
+    - *And for the very first time:*
+      Monokai foculor 2 Nord Atlantic (ST Build >3152 or 3.1 required)
+* Fixed Dialogs
+* Fixes for fonts on macOS
+
+If you find any issues, please report them at https://github.com/bluefirex/sublime-foculor/issues
