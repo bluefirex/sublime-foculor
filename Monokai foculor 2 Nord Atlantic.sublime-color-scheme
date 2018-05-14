@@ -1,0 +1,712 @@
+/**
+ * foculor Bord
+ * 
+ * A color scheme for Sublime Text 3 (> 3149)
+ *
+ * It has some special settings for these languages:
+ *     - JSON
+ *     - XML + HTML
+ *     - Yaml
+ *     - JavaScript (ES6)
+ *     - TypeScript
+ *     - CSS + SCSS
+ *     - Vue Component
+ *     - PHP
+ *     - Java
+ *     - Python
+ *     - C
+ *     - Objective C
+ *     - Bash
+ *     - RegEx
+ *
+ * @author bluefirex <https://bluefirex.com>
+ */
+{
+	"globals": {
+		"background": "var(background)",
+		"foreground": "var(white)",
+
+		"line_highlight": "#ffffff0D",
+		"find_highlight": "#ffe792",
+		
+		"selection": "#C2C4CC2A",
+		"selection_border": "#C2C4CC44",
+		"inactive_selection": "#313642",
+
+		"caret": "#8ba7a7",
+
+		"gutter_foreground": "#5C627383",
+		"guide": "#292F3D",
+		"active_guide": "#353D4F",
+		"shadow": "#00000030",
+		"shadow_width": "12"
+	},
+
+	"variables": {
+		"background": "#1d212b",
+		"background-dim": "#2F353F",
+
+		"pink": "#BB616B",
+		"pink-dim": "#BB616B22",
+		"grey": "#4C5668",
+		"light-grey": "#D9DFE9",
+		"blue": "#83A2BF",
+		"very-blue": "#6082AA",
+		"turqoise": "#92BCBB",
+		"orange": "#CD8673",
+		"green": "#A5BD8F",
+		"purple": "#B28FAC",
+		"red": "#BB616B",
+		"yellow": "#EACA90",
+		"yellow-dim": "#EACA9020",
+		"white": "#ECEFF4"
+	},
+
+	"rules": [
+		// Generic
+		{
+			"scope": "comment",
+			"foreground": "var(grey)"
+		},
+		
+		{
+			"scope": "keyword",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "string.quoted",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "string.unquoted",
+			"foreground": "var(green)"
+		},
+
+			{
+				"scope": "string.unquoted.label, meta.object-literal.key.ts",
+				"foreground": "var(green)"
+			},
+
+		{
+			"scope": "string.interpolated",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "constant",
+			"foreground": "var(purple)"
+		},
+
+		{
+			"scope": "storage",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "storage.type, support.type, entity.name.type",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "storage.type.class, storage.type.interface, storage.type.trait",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "support.class",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "entity.name.function",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "entity.name.constant",
+			"foreground": "var(purple)"
+		},
+
+		{
+			"scope": "meta.function-call",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "meta.function-call.object, meta.function-call.static, meta.function-call variable",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "variable.parameter",
+			"foreground": "var(orange)"
+		},
+
+		{
+			"scope": "variable.function",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "variable.other.class",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "punctuation.definition.annotation, meta.annotation, variable.annotation",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "entity.name.class, entity.name.type.class",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "entity.other.inherited-class",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "entity.name.namespace, entity.name.type.namespace, entity.name.namespace.header",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "support.other.namespace",
+			"foreground": "var(light-grey)"
+		},
+
+		/* {	// Different color for `this`
+			"scope": "variable.language.this",
+			"foreground": "var(light-grey)"
+		}, */
+
+		// Library
+		{
+			"scope": "support.class.builtin",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "support.function",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "support.constant",
+			"foreground": "var(purple)"
+		},
+
+			{
+				"scope": "support.constant.core",
+				"foreground": "var(blue)"
+			},
+
+		// Documentation
+		/* {
+			"scope": "comment.block.documentation storage.type",
+			"foreground": "var(blue)"
+		}, */
+
+		// Regex
+		{
+			"scope": "string.regexp",
+			"foreground": "var(yellow)"
+		},
+
+			{
+				"scope": "string.regexp constant.other.character-class.set",
+				"foreground": "var(orange)"
+			},
+
+			{
+				"scope": "string.regexp keyword.operator.quantifier",
+				"foreground": "var(light-grey)"
+			},
+
+			{
+				"scope": "constant.other.character-class.escape.backslash.regexp",
+				"foreground": "var(purple)"
+			},
+
+		// Punctuation
+		{
+			"scope": "punctuation",
+			"foreground": "var(white)"
+		},
+			{
+				"scope": "punctuation.definition.comment",
+				"foreground": "var(grey)"
+			},
+
+			{
+				"scope": "punctuation.definition.keyword",
+				"foreground": "var(very-blue)"
+			},
+
+			{
+				"scope": "punctuation.definition.constant",
+				"foreground": "var(purple)"
+			},
+
+			{
+				"scope": "punctuation.definition.string.begin, punctuation.definition.string.end",
+				"foreground": "var(green)"
+			},
+
+		{
+			"scope": "meta.group.braces.round.function.arguments",
+			"foreground": "var(white)"
+		},
+
+		// XML / HTML / PLIST-specific
+		{
+			"scope": "entity.name.tag",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "entity.other.attribute-name",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "meta.tag.sgml.doctype",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "meta.tag punctuation.separator.key-value.html",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "punctuation.definition.tag",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "constant.character.entity.html, punctuation.definition.entity.html",
+			"foreground": "var(purple)"
+		},
+
+		// JSON-specific
+		{
+			"scope": "string.quoted.double.json",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "punctuation.definition.string.begin.json, punctuation.definition.string.end.json",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json",
+			"foreground": "var(white)"
+		},
+
+		// PHP-specific
+		{
+			"scope": "meta.function.arguments support.class, meta.function.parameters support.class",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "meta.tag.inline.phpdoc.php",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "meta.function-call.object.php",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "meta.function-call.php meta.group.php",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "variable.other.class.php",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "variable.other.global.php",
+			"fontStyle": "italic", // Workaround for Build 3149
+			"font_style": "italic", // Official
+		},
+
+		{
+			"scope": "meta.embedded.line.php source.php",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "punctuation.accessor.arrow.php, punctuation.accessor.double-colon.php",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "variable.parameter.php",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "variable.language.php, variable.language.php punctuation.definition.variable",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "source.php meta.class.php entity.name.class.php",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "meta.use.php support.class.php",
+			"foreground": "var(white)"
+		},
+
+		// TypeScript-specific
+		{
+			"scope": "variable.other.constant.property",
+			"foreground": "var(purple)"
+		},
+
+		// JavaScript-specific
+		{
+			"scope": "comment.block.documentation storage.type.class.jsdoc, punctuation.definition.block.tag",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "comment.block.documentation entity.name.type.instance.jsdoc",
+			"foreground": "var(grey)"
+		},
+
+		{
+			"scope": "comment.block.documentation punctuation.definition.bracket",
+			"foreground": "var(grey)"
+		},
+
+		{
+			"scope": "keyword.operator.accessor",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "keyword.other.template.begin.js, keyword.other.template.end.js",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "punctuation.separator.key-value.js",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "punctuation.definition.string.quoted",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "cast.expr.ts, cast.expr.ts entity.name.type, entity.name.type.ts",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "support.constant.json.ts",
+			"foreground": "var(blue)"
+		},
+
+		// CSS/SCSS-specific
+		{
+			"scope": "meta.property-name.scss, meta.property-name.css, meta.property-name.css support.type.property-name, support.type.property-name.css.sass",
+			"foreground": "var(orange)"
+		},
+
+		{
+			"scope": "meta.property-name.css support.type.vendor-prefix",
+			"foreground": "var(orange)"
+		},
+
+		{
+			"scope": "meta.at-rule.mixin.scss variable.scss",
+			"foreground": "var(orange)"
+		},
+
+		{
+			"scope": "meta.at-rule.mixin.scss support.constant",
+			"foreground": "var(purple)"
+		},
+
+		{
+			"scope": "meta.function-call.css, support.function.filter.css, support.function.sass",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "keyword.other.unit.css",
+			"foreground": "var(purple)"
+		},
+
+		{
+			"scope": "entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css punctuation, .entity.other.attribute-name.class.css punctuation",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "entity.other.pseudo-class.css.sass",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "support.function.interpolation.sass",
+			"foreground": "var(green)"
+		},
+
+			{
+				"scope": "support.function.interpolation.sass variable.other.value",
+				"foreground": "var(orange)"
+			},
+
+		{
+			"scope": "meta.property-value.scss, support.constant.property-value.scss, support.constant.property-value.css",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "support.constant.property-value.css.sass",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "entity.other.attribute-selector.sass",
+			"foreground": "var(orange)"
+		},
+
+		{
+			"scope": "meta.property-value variable.scss",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "meta.property-name.scss invalid.illegal",
+			"foreground": "var(pink)",
+			"background": "var(pink-dim)"
+		},
+
+		{
+			"scope": "comment.punctuation.comma.sass",
+			"foreground": "var(white)"
+		},
+
+		// Vue-specific
+		{
+			"scope": "meta.directive.vue, source.directive.vue",
+			"background": "var(background-dim)",
+			"foreground": "var(green)",
+			"fontStyle": "italic", // Workaround for Build 3149
+			"font_style": "italic", // Official
+		},
+
+		{
+			"scope": "text.html.vue meta.tag.template, text.html.vue meta.tag.style, text.html.vue meta.tag.script",
+			"font_style": "bold"
+		},
+
+		{
+			"scope": "text.html.vue meta.tag.template entity.name.tag.template, text.html.vue meta.tag.template punctuation, text.html.vue meta.tag.template entity, text.html.vue meta.tag.template variable",
+			"font_style": "none"
+		},
+
+		{
+			"scope": "source.directive.vue string.unquoted.label.js",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "source.directive.vue keyword.operator.accessor",
+			"foreground": "var(green)"
+		},
+
+		/*{	// Doesn't work at the moment due to not all equal signs being detected
+			"scope": "text.html.vue meta.tag",
+			"foreground": "var(pink)"
+		},*/
+
+		// Python-specific
+		{
+			"scope": "storage.type.function.python",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"scope": "meta.generic-name.python",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "meta.function-call.python meta.qualified-name",
+			"foreground": "var(turqoise)"
+		},
+
+		{	// Example: urllib2.__Request__(url)
+			"scope": "meta.function-call.python meta.qualified-name",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "entity.name.function.python meta.generic-name.python",
+			"foreground": "var(turqoise)"
+		},
+
+		// Bash-specific
+		{
+			"scope": "comment.line.number-sign",
+			"fontStyle": "italic", // Workaround for Build 3149
+			"font_style": "italic", // Official
+		},
+
+		{
+			"scope": "support.function.double-brace.begin.shell, support.function.double-brace.end.shell",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "meta.function-call.arguments.shell",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "variable.parameter.option.shell",
+			"fontStyle": "italic", // Workaround for Build 3149
+			"font_style": "italic", // Official
+		},
+
+		{
+			"scope": "support.function.echo.shell",
+			"foreground": "var(very-blue)"
+		},
+
+		// YAML-specific
+		{
+			"scope": "string.unquoted.plain.out.yaml, string.unquoted.block.yaml",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "keyword.control.flow.block-scalar.literal.yaml",
+			"foreground": "var(green)"
+		},
+
+		{
+			"scope": "keyword.control.property.anchor.yaml, punctuation.definition.anchor.yaml, keyword.control.flow.alias.yaml, punctuation.definition.alias.yaml",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "entity.name.other.anchor.yaml",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "variable.other.alias.yaml",
+			"foreground": "var(turqoise)"
+		},
+
+		// C-specific
+		{
+			"scope": "punctuation.section.group.begin.c, punctuation.section.group.end.c",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "meta.preprocessor.c",
+			"fontStyle": "bold", // Workaround for Build 3149
+			"font_style": "bold", // Official
+			"background": "#f9267210"
+		},
+
+		{
+			"scope": "meta.group.c",
+			"foreground": "var(white)"
+		},
+
+		// Objective C-specific
+		{
+			"scope": "punctuation.section.group.begin.objc, punctuation.section.group.end.objc",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "meta.function-call.objc",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "support.function.any-method.objc",
+			"foreground": "var(turqoise)"
+		},
+
+		{
+			"scope": "meta.preprocessor.macro.objc, meta.preprocessor.import.objc",
+			"fontStyle": "bold", // Workaround for Build 3149
+			"font_style": "bold", // Official
+			"background": "#f9267210"
+		},
+
+		// Java-specific
+		{
+			"scope": "storage.type.java",
+			"foreground": "var(very-blue)"
+		},
+
+		{
+			"scope": "source.java-props",
+			"foreground": "var(light-grey)"
+		},
+
+		{
+			"scope": "support.class.import.java",
+			"foreground": "var(white)"
+		},
+
+		// Meta-stuff
+		{
+			"scope": "invalid.illegal",
+			"foreground": "var(white)",
+			"background": "var(red)"
+		},
+
+		{
+			"scope": "invalid.deprecated",
+			"font_style": "italic"
+		},
+
+		// Linter
+		{
+			"scope": "sublimelinter.mark.error",
+			"foreground": "#DA2000"
+		},
+
+		{
+			"scope": "sublimelinter.gutter-mark",
+			"foreground": "var(white)"
+		},
+
+		{
+			"scope": "sublimelinter.mark.warning",
+			"foreground": "#EDBA00"
+		},
+	]
+}
