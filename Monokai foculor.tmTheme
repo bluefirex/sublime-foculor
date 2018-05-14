@@ -14,7 +14,7 @@
 				<key>caret</key>
 				<string>#8BA7A7</string>
 				<key>foreground</key>
-				<string>#F8F8F840</string>
+				<string>#f8f8f8</string>
 				<key>lineHighlight</key>
 				<string>#FFFFFF0D</string>
 				<key>selection</key>
@@ -52,7 +52,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, keyword.other.template.begin.js, keyword.other.template.end.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -107,11 +107,22 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword, storage.type.class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#F92672</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Generic Punctuation</string>
+			<key>scope</key>
+			<string>meta.group.braces.round.function.arguments</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F8F8F8</string>
 			</dict>
 		</dict>
 		<dict>
@@ -170,7 +181,7 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function</string>
+			<string>entity.name.function, meta.function-call</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -248,7 +259,7 @@
 			<key>name</key>
 			<string>Library class/type</string>
 			<key>scope</key>
-			<string>support.type, support.class</string>
+			<string>support.type, support.class, entity.name.type.class, variable.other.class</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -272,7 +283,7 @@
 			<key>name</key>
 			<string>Invalid</string>
 			<key>scope</key>
-			<string>invalid</string>
+			<string>invalid - meta.property-name</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -300,7 +311,7 @@
 			<key>name</key>
 			<string>JSON String</string>
 			<key>scope</key>
-			<string>meta.structure.dictionary.json string.quoted.double.json</string>
+			<string>meta.structure.dictionary string.quoted.double</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -387,6 +398,76 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>CSS/SCSS: Property</string>
+			<key>scope</key>
+			<string>meta.property-name.scss, meta.property-name.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS/SCSS: Illegal Property</string>
+			<key>scope</key>
+			<string>meta.property-name.scss invalid.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+				<key>fontStyle</key>
+				<string>underlined</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS: Label</string>
+			<key>scope</key>
+			<string>string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f8f8f8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS: Punctuation Seperator</string>
+			<key>scope</key>
+			<string>punctuation.separator.key-value.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F92672</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS: Object accessor</string>
+			<key>scope</key>
+			<string>keyword.operator.accessor.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F8F8F8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Vue: Label</string>
+			<key>scope</key>
+			<string>source.directive.vue string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E6DB74</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Vue: Directive</string>
 			<key>scope</key>
 			<string>meta.directive.vue, source.directive.vue, source.directive.vue variable.other.readwrite.js, source.directive.vue variable.other.object.js</string>
@@ -400,7 +481,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Vue Embedded Expression Directive</string>
+			<string>Vue: Embedded Expression Directive</string>
 			<key>scope</key>
 			<string>source.directive.vue, meta.directive.vue</string>
 			<key>settings</key>
