@@ -18,6 +18,12 @@ This color scheme is based on the [Nord Color Palette](https://github.com/arctic
 
 ![image](docs/images/screenshots/overview_dark_nord.png)
 
+#### foculor with Monokai Nord Atlantic
+
+This color scheme is based on the [Nord Color Palette](https://github.com/arcticicestudio/nord).
+
+![image](docs/images/screenshots/overview_dark_nord_atlantic.png)
+
 #### foculor Light with Monokai Light
 
 ![image](docs/images/screenshots/overview_light.png)
